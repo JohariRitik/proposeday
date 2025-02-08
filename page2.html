@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Lobster&family=Love+Light&family=Outfit:wght@100..900&family=Pacifico&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+    <title>Letter Nikalo </title>
+</head>
+<body>
+    <div class="letter" onclick="showPDF()">Proposal for my Kuchi</div>
+    <div id="pdfDiv" class="pdf-container">
+        <iframe src="assets/letter.pdf" width="100%" height="100%"></iframe>
+    </div>
+    <script>
+        function showPDF() {
+            var pdfDiv = document.getElementById("pdfDiv");
+            if (pdfDiv.style.display === "none" || pdfDiv.style.display === "") {
+                pdfDiv.style.display = "block"; // Show the div
+            } else {
+                pdfDiv.style.display = "none"; // Hide the div if clicked again
+            }
+        }
+    </script>
+</body>
+</html>

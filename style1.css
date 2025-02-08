@@ -1,0 +1,36 @@
+body{
+    background-image:url(assets/post.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.letter{
+    height:220px;
+    width:180px;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-right:10px solid black;
+    z-index: 10;
+    background-color: white;
+    margin-top: 50vh;
+    margin-left:60vw;
+    font-family: "pacifico",serif;
+    font-size: 40px;
+    padding-top: 4%;
+}
+.letter:hover{
+    width:300px;
+    border-top-right-radius:0%;
+    border-bottom-right-radius:0%;
+}
+.pdf-container {
+    width: 80%;
+    height: 500px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    display: none; /* Initially hidden */
+}

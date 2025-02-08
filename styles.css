@@ -1,0 +1,72 @@
+body{
+    background-image: url(./assets/happy_valentines_day_92_pink.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family:"pacifico",serif ;
+    font-size: 4rem;
+    color:darkred;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-family:"pacifico",serif ;
+    font-size: 2rem;
+}
+button{
+    font-family: "pacifico",serif;
+    border-radius: 10px;
+    font-size: large;
+    background-color: burlywood;
+    cursor: pointer;
+    padding:1%;
+}
+button:hover{
+    background-color: deeppink;
+    padding:2%;
+}
+.pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.train-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* The train (moving images) */
+.train {
+    display: flex;
+    gap: 20px;
+    animation: moveTrain 30s linear infinite;
+}
+
+/* Images inside the train */
+.train img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Animation to move the images like a train */
+@keyframes moveTrain {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+  
